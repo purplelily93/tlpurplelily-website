@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
   <header class="hero-section">
     <nav>
@@ -33,13 +35,58 @@
       <p class="slide-in delay-1">Use the form below to get in touch. I’ll respond within 24 hours.</p>
 
       <div class="slide-in delay-2">
-        <script type="text/javascript" src="https://form.jotform.com/jsform/251964519234159"></script>
+<form action="mailto:trisha.lumbert@tlpurplelily.me,nicole.collins9311@gmail.com" method="post" enctype="text/plain">
+  <label for="name">Name:</label><br />
+  <input type="text" id="name" name="Name" required /><br /><br />
+
+  <label for="email">Email:</label><br />
+  <input type="email" id="email" name="Email" required /><br /><br />
+
+  <label for="inquiry">What is your inquiry about?</label><br />
+  <select id="inquiry" name="Inquiry Topic" required>
+    <option value="">-- Please select --</option>
+    <option value="Packages">Packages</option>
+    <option value="Schedule a Meeting">Schedule a Meeting</option>
+    <option value="Other">Other</option>
+  </select><br /><br />
+
+  <label for="message">Message:</label><br />
+  <textarea id="message" name="Message" rows="5" required></textarea><br /><br />
+
+  <input type="submit" value="Send Message" />
+</form>
+
+</form>
+
+
       </div>
     </section>
   </main>
-  <footer
-   <p>&copy; 2025 Trisha Lumbert | Virtual Assistant | <a href="mailto:trisha.lumbert@tlpurplelily.me">trisha.lumbert@tlpurplelily.me |</a></p>
+
+<script>
+  document.getElementById("navToggle").addEventListener("click", function () {
+    document.getElementById("navLinks").classList.toggle("open");
+  });
+</script>
+
+  <footer>
+   <p>&copy; 2025 Trisha Lumbert | Virtual Assistant | <a href="mailto:tl.purplelily.me@gmail.com">tl.purplelily.me@gmail.com |</a></p>
    <p><a href="mailto:nicole.collins9311@gmail.com"></a></p>
   </footer>
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">
+  window.onload = function() {
+    Calendly.initBadgeWidget({
+      url: 'https://calendly.com/nicole-collins9311',
+      text: 'Schedule time with me',
+      color: '#fc00ff',
+      textColor: '#000000',
+      branding: true
+    });
+  };
+</script>
+
 </body>
 </html>

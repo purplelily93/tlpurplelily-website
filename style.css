@@ -9,9 +9,9 @@ body {
 }
 
 header.hero-section {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-image.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Purple\ lily.jpg') no-repeat center center/cover;
   height: 100vh;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,6 +59,30 @@ nav .nav-links a::after {
 nav .nav-links a:hover::after {
   width: 100%;
 }
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+  #navLinks {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  #navLinks.open {
+    display: flex;
+  }
 
 .hero-content {
   text-align: center;
@@ -112,27 +136,69 @@ section {
 
 .feature-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fdf8fa; /* subtle pink tint for elegance */
+}
+/* Contact Form Styling */
+form {
+  background-color: #ff04d930;
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 1em;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: #f78da7;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #e94e77;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #f78da7; /* subtle pink border for elegance */
 }
 
 footer {
   background: #222;
-  color: #ccc;
+  color: #e80bf85b;
   text-align: center;
   padding: 1.5em;
 }
 
-/* Style for embedded form */
-iframe[src*="jotform"] {
-  border: none;
-  width: 100%;
-  max-width: 800px;
-  height: 800px;
-  margin: 0 auto;
-  display: block;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
 
 /* Animations */
 .fade-in {
