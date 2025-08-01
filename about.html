@@ -46,27 +46,45 @@
       <div class="feature-card zoom-in">
         <h3>Transcription Expertise</h3>
         <p>Over a year of medical transcription experience with attention to detail and confidentiality.</p>
+        <div class="more-info">
+          <p>Expert in audio-to-text conversion, proofreading, and ensuring HIPAA compliance for sensitive documents.</p>
+        </div>
       </div>
       <div class="feature-card zoom-in delay-1">
         <h3>Tech & Admin Skills</h3>
         <p>Proficient in HTML, CSS, Microsoft Office, and CRM tools. Studying Python and JavaScript.</p>
+        <div class="more-info">
+          <p>Experienced in data management, website updates, and streamlining business processes through technology.</p>
+        </div>
       </div>
       <div class="feature-card zoom-in delay-2">
         <h3>Client-First Approach</h3>
         <p>Reliable communication, flexible support, and a genuine commitment to your success.</p>
+        <div class="more-info">
+          <p>I prioritize transparency, quick turnaround, and personalized service to help clients achieve their goals.</p>
+        </div>
       </div>
     </section>
   </main>
 
- <script>
-  document.getElementById("navToggle").addEventListener("click", function () {
-    document.getElementById("navLinks").classList.toggle("open");
-  });
-</script>
 
-<footer>
-  <p>&copy; 2025 Trisha Lumbert | Virtual Assistant | <a href="mailto:tl.purplelily.me@gmail.com">tl.purplelily.me@gmail.com |</a></p>
-        <a href="mailto:nicole.collins9311@gmail.com"></a> 
+  <script>
+    document.querySelectorAll('.feature-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('show');
+      });
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Trisha Lumbert | Virtual Assistant | <a href="mailto:tl.purplelily.me@gmail.com" target="_blank">tl.purplelily.me@gmail.com |</a></p>
+    <a href="mailto:nicole.collins9311@gmail.com"></a> 
+    <a href="https://www.facebook.com/Trisha.lumbert" target="_blank" style="margin-left: 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width:24px;height:24px;vertical-align:middle;">
+    </a>
+    <a href="https://www.linkedin.com/in/trisha-lumbert-390992244/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:24px;height:24px;vertical-align:middle;">
+    </a>
   </footer>
 </body>
 </html>

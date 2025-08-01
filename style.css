@@ -9,7 +9,7 @@ body {
 }
 
 header.hero-section {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Purple\ lily.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(176, 21, 181, 0.6), rgba(226, 128, 203, 0.6)), url('Purple\ lily.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #ffffff;
   display: flex;
@@ -22,12 +22,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(99, 98, 98, 0.4);
 }
 
 nav .logo img {
-  height: 60px;
-  max-height: 80px;
+  height: 110px;
+  max-height: 120px;
   width: auto;
 }
 
@@ -117,6 +117,8 @@ section {
   text-align: center;
 }
 
+
+/* Feature card section */
 .features-section {
   display: flex;
   flex-wrap: wrap;
@@ -139,6 +141,28 @@ section {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   background-color: #fdf8fa; /* subtle pink tint for elegance */
 }
+
+.feature-card {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.more-info {
+    display: none;
+  margin-top: 1em;
+  font-size: 0.95em;
+  color: #555;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.feature-card.show .more-info {
+  display: block;
+  opacity: 1;
+}
+
+
 /* Contact Form Styling */
 form {
   background-color: #ff04d930;
@@ -193,8 +217,8 @@ form input[type="submit"]:hover {
 }
 
 footer {
-  background: #222;
-  color: #e80bf85b;
+  background: #909090;
+  color: #541059c3;
   text-align: center;
   padding: 1.5em;
 }

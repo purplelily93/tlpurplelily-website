@@ -37,47 +37,79 @@
       <div class="feature-card zoom-in">
         <h3>Email & Calendar Management</h3>
         <p>Efficient scheduling and inbox organization for smooth daily operations.</p>
+        <div class="more-info">
+          <p>Includes creating filters, labels, reminders, and managing meetings across time zones.</p>
+        </div>
       </div>
       <div class="feature-card zoom-in delay-1">
         <h3>File Organization</h3>
         <p>Sort, name, and archive files in Google Drive, Dropbox, or your preferred platform.</p>
+        <div class="more-info">
+          <p>Ensure secure storage and easy retrieval through organized folder structures.</p>
+        </div>
       </div>
       <div class="feature-card zoom-in delay-2">
         <h3>Data Entry & CRM Updates</h3>
         <p>Keep your records accurate and current for smarter business decisions.</p>
+        <div class="more-info">
+          <p>Experienced in Salesforce, HubSpot, and custom CRM platforms.</p>
+        </div>
       </div>
       <div class="feature-card zoom-in delay-3">
         <h3>Transcription (Medical & General)</h3>
         <p>Accurate audio transcription with attention to detail and confidentiality.</p>
+        <div class="more-info">
+          <p>HIPAA-compliant transcription services with quick turnaround times.</p>
+        </div>
       </div>
       <div class="feature-card zoom-in delay-4">
         <h3>Document Formatting</h3>
         <p>Clean, professional formatting for reports, PDFs, and presentation materials.</p>
+        <div class="more-info">
+          <p>Includes templates, consistent styling, and error-free documents.</p>
+        </div>
       </div>
       <div class="feature-card zoom-in delay-5">
         <h3>Customer Support</h3>
         <p>Email and chat responses to ensure your clients feel heard and supported.</p>
+        <div class="more-info">
+          <p>Dedicated to fast responses and positive customer experiences.</p>
+        </div>
       </div>
       <div class="feature-card zoom-in delay-6">
         <h3>Social Media Scheduling</h3>
         <p>Weekly content planning and post scheduling for a consistent online presence.</p>
+        <div class="more-info">
+          <p>Manage posts across Facebook, Instagram, and LinkedIn.</p>
+        </div>
       </div>
       <div class="feature-card zoom-in delay-7">
         <h3>Basic Tech Admin</h3>
         <p>HTML/CSS updates and blog editing to keep your site fresh and functional.</p>
+        <div class="more-info">
+          <p>Includes layout adjustments, link fixes, and content updates.</p>
+        </div>
       </div>
     </section>
   </main>
 
-<script>
-  document.getElementById("navToggle").addEventListener("click", function () {
-    document.getElementById("navLinks").classList.toggle("open");
-  });
-</script>
+  <script>
+    document.querySelectorAll('.feature-card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('show');
+      });
+    });
+  </script>
 
-<footer>
-  <p>&copy; 2025 Trisha Lumbert | Virtual Assistant | <a href="mailto:tl.purplelily.me@gmail.com">tl.purplelily.me@gmail.com |</a></p>
-        <a href="mailto:nicole.collins9311@gmail.com"></a> 
+  <footer>
+    <p>&copy; 2025 Trisha Lumbert | Virtual Assistant | <a href="mailto:tl.purplelily.me@gmail.com" target="_blank">tl.purplelily.me@gmail.com |</a></p>
+    <a href="mailto:nicole.collins9311@gmail.com"></a> 
+    <a href="https://www.facebook.com/Trisha.lumbert" target="_blank" style="margin-left: 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width:24px;height:24px;vertical-align:middle;">
+    </a>
+    <a href="https://www.linkedin.com/in/trisha-lumbert-390992244/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:24px;height:24px;vertical-align:middle;">
+    </a>
   </footer>
 </body>
 </html>

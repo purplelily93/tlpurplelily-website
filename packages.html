@@ -34,7 +34,7 @@
     </section>
 
     <section class="features-section">
-      <div class="feature-card zoom-in">
+      <div class="feature-card zoom-in" onclick="openCalendly('Starter Support Package')">
         <h3>🔹 Starter Support Package</h3>
         <p><strong>$300/month</strong></p>
         <ul>
@@ -45,8 +45,10 @@
           <li>2 hrs transcription/month</li>
           <li>Light customer service</li>
         </ul>
+        <button class="btn">Schedule Now</button>
       </div>
-      <div class="feature-card zoom-in delay-1">
+
+      <div class="feature-card zoom-in delay-1" onclick="openCalendly('Professional Plus Package')">
         <h3>🔸 Professional Plus Package</h3>
         <p><strong>$550/month</strong></p>
         <ul>
@@ -57,8 +59,10 @@
           <li>Medical terminology research</li>
           <li>CRM updates & tracking</li>
         </ul>
+        <button class="btn">Schedule Now</button>
       </div>
-      <div class="feature-card zoom-in delay-2">
+
+      <div class="feature-card zoom-in delay-2" onclick="openCalendly('Premium Productivity Package')">
         <h3>🔺 Premium Productivity Package</h3>
         <p><strong>$850/month</strong></p>
         <ul>
@@ -71,6 +75,7 @@
           <li>Social media scheduling (1 platform)</li>
           <li>Priority task handling</li>
         </ul>
+        <button class="btn">Schedule Now</button>
       </div>
     </section>
 
@@ -79,15 +84,25 @@
     </section>
   </main>
 
- <script>
-  document.getElementById("navToggle").addEventListener("click", function () {
-    document.getElementById("navLinks").classList.toggle("open");
-  });
-</script>
+  <script>
+    function openCalendly(packageName) {
+      // Option 1: Direct Calendly link
+      window.open('https://calendly.com/nicole-collins9311?package=' + encodeURIComponent(packageName), '_blank');
+
+      // Option 2: Pre-filled email (if desired, uncomment below)
+      // window.location.href = `mailto:tl.purplelily.me@gmail.com?subject=${encodeURIComponent(packageName)}&body=I am interested in the ${encodeURIComponent(packageName)}. Please provide details.`;
+    }
+  </script>
 
   <footer>
-    <p>&copy; 2025 Trisha Lumbert | Virtual Assistant | <a href="mailto:tl.purplelily.me@gmail.com">tl.purplelily.me@gmail.com |</a></p>
-        <a href="mailto:nicole.collins9311@gmail.com"></a> 
+    <p>&copy; 2025 Trisha Lumbert | Virtual Assistant | <a href="mailto:tl.purplelily.me@gmail.com" target="_blank" >tl.purplelily.me@gmail.com |</a></p>
+    <a href="mailto:nicole.collins9311@gmail.com"></a> 
+    <a href="https://www.facebook.com/Trisha.lumbert" target="_blank" style="margin-left: 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width:24px;height:24px;vertical-align:middle;">
+    </a>
+    <a href="https://www.linkedin.com/in/trisha-lumbert-390992244/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:24px;height:24px;vertical-align:middle;">
+    </a>
   </footer>
 </body>
 </html>
